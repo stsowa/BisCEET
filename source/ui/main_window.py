@@ -575,17 +575,17 @@ class GenBankBrowser(DataMixin, DrawingMixin, EventMixin, ActionMixin, ttk.Frame
         # Center on parent
         about_win.geometry("+%d+%d" % (self.master.winfo_x() + 100, self.master.winfo_y() + 100))
         
-        about_text = """BisCEET v1.0.0
+        about_text = """BisCEET v0.9.0-beta
 
 Biosynthetic Cluster Environment Examination Tool
 
 A Python/Tkinter application for visualizing, comparing, 
 and analyzing gene clusters from GenBank files.
 
-© 2024 BisCEET Contributors
+© 2025 BisCEET Contributors
 Licensed under the MIT License
 
-https://github.com/yourusername/BisCEET"""
+https://github.com/stsowa/BisCEET"""
         
         frame = ttk.Frame(about_win, padding=20)
         frame.pack(fill=tk.BOTH, expand=True)
