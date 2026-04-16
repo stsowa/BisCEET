@@ -13,3 +13,7 @@ FAD
 oxygenase
 dehydratase
 cyclase
+oxidase
+adenylation
+hydroxylase
+racemase

@@ -3,3 +3,5 @@ regulator
 symporter
 hypothetical
 unknown
+antiporter
+helix-turn-helix
