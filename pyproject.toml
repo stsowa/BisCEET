@@ -1,6 +1,6 @@
 [project]
 name = "BisCEET"
-version = "1.0.0"
+version = "1.1.0"
 description = "BisCEET is a Python/Tkinter desktop application for visualizing, comparing, and analyzing biosynthetic gene clusters from GenBank files."
 readme = "README.md"
 requires-python = ">=3.12"
