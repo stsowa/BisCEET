@@ -25,28 +25,28 @@ BisCEET is a Python/Tkinter desktop application for visualizing, comparing, and 
 
 ## Installation
 
-### Prerequisites
+### Install the application
 
-- Python 3.8 or higher
-- Tkinter (usually included with Python)
-
-### Install Dependencies
+*Nota bene: This installation guide assumes that `uv` is installed on the system. If not, install `uv` using [these instructions](https://docs.astral.sh/uv/getting-started/installation/).*
 
 ```bash
-pip install -r requirements.txt
-```
-
-Or install directly:
-
-```bash
-pip install biopython>=1.79
+uv sync
 ```
 
 ### Run the Application
 
 ```bash
-cd source
-python BisCEET.py
+uv run python source/BisCEET.py 
+```
+
+### Troubleshooting
+
+On some systems (e.g. Ubuntu Linux) the `tkinter` library is not included with Python. 
+In such cases, you need to install it manually before BisCEET can be used.
+
+Ubuntu Linux
+```bash
+apt-get install python3-tk
 ```
 
 ## Usage
