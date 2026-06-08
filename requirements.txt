@@ -1,2 +1,0 @@
-# BisCEET Dependencies
-biopython>=1.79
