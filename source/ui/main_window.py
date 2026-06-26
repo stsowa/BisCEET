@@ -22,6 +22,7 @@ from ui.state import (
     AlignmentState, SelectionState, ViewState, 
     ClipboardState, UserMetadata, ProjectState
 )
+from pathlib import Path
 
 # Mixins
 from ui.mixins.data_mixin import DataMixin
@@ -76,8 +77,12 @@ class GenBankBrowser(DataMixin, DrawingMixin, EventMixin, ActionMixin, ttk.Frame
         self.editor_window = None  # Tracks active editor popup
 
         # --- Filters ---
-        self.hide_genes_list = load_keywords("config/hide_genes.txt")
-        self.highlight_genes_list = load_keywords("config/highlight_genes.txt")
+        source_dir = Path(__file__).resolve().parent.parent
+        hide_path = source_dir / "config" / "hide_genes.txt"
+        highlight_path = source_dir / "config" / "highlight_genes.txt"
+        
+        self.hide_genes_list = load_keywords(hide_path)
+        self.highlight_genes_list = load_keywords(highlight_path)
 
         # --- Fonts & Helpers ---
         self.label_font = font.Font(family="Tahoma", size=8)
