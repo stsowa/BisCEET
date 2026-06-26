@@ -580,7 +580,7 @@ class GenBankBrowser(DataMixin, DrawingMixin, EventMixin, ActionMixin, ttk.Frame
         # Center on parent
         about_win.geometry("+%d+%d" % (self.master.winfo_x() + 100, self.master.winfo_y() + 100))
         
-        about_text = """BisCEET v1.1.0
+        about_text = """BisCEET v1.1.1
 
 Biosynthetic Cluster Environment Examination Tool
 
